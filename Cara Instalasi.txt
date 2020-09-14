@@ -1,0 +1,61 @@
+UNTUK MENJALANKAN SCRIPT DI LOCALHOST
+=====================================
+
+- Disarankan memakai software XAMPP 3.2.2 / atau PHP 7.3.3
+- Apache/2.4.38 (Win32) OpenSSL/1.1.1a PHP/7.3.2
+- Database client version: libmysql - mysqlnd 5.0.12
+- Ekstrak file siakad.zip lalu letakkan pada folder htdocs pada XAMPP anda.
+- Konfigurasi koneksi database,buka folder function dan persiksa file connect.php
+  Sesuaikan dengan nama databasenya misal "siakad".
+  
+	$servername	= "localhost";
+
+	$username	= "root";
+
+	$password	= "";
+
+	$database	= "siakad";
+
+ (Bila pada XAMPP anda tidak di password kosongkan saja bagian $password)
+
+- Buka http://localhost/phpmyadmin dan buat nama database "siakad".
+- Dumping atau import file siakad.sql ke MySQL phpmyadmin pada folder database/siakad.sql
+- Jalankan browser http://localhost/siakad
+- SELESAI
+
+
+admin UNTUK LOGIN KE APLIKASI
+============================
+-ketikan pada browser http://localhost/siakad/admin
+-Login:
+Administrator
+Username: admin
+password: admin
+
+Operator
+Username: operator
+password: operator
+
+guru UNTUK LOGIN KE APLIKASI
+============================
+-ketikan pada browser http://localhost/siakad/guru
+-Login:
+guru 
+Username: 00001
+password: 123456
+
+siswa UNTUK LOGIN KE APLIKASI
+============================
+-ketikan pada browser http://localhost/siakad/siswa
+-Login:
+
+untuk absensi masuk harian guru 
+======================
+-ketikan pada browser http://localhost/siakad/harian
+
+untuk absensi pulang harian guru 
+======================
+-ketikan pada browser http://localhost/siakad/harian/absen-pulang
+
+
+
